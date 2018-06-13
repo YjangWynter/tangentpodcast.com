@@ -4,7 +4,6 @@ body{
 nav{
   background-color: blue;
   overflow: hidden;
-   margin: 0;
 }
 nav ul{
     padding:20;
@@ -12,10 +11,11 @@ nav ul{
   line-height: 1.6em;
   *display:inline; /* ie7 fix */
   *zoom:1; /* hasLayout ie7 trigger */
+    text-align: center;
 }
 nav li{
-margin-left: 4;
-margin-right: 4;
+margin-left: 10px;
+margin-right: 10px;
     display:inline-block;
     *display:inline; /* ie7 fix */
     *zoom:1; /* hasLayout ie7 trigger */
@@ -30,7 +30,6 @@ nav a{
   font-size: 20px;
 line-height: 1.6em;
 }
-
 .title{
   vertical-align: middle;
   position:relative;
@@ -48,7 +47,6 @@ font-family: 'Open Sans', sans-serif;
 }
 a:hover{
   color:#EB1919;
-
   text-decoration: none;
 }
 
