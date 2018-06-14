@@ -4,6 +4,7 @@ body{
 nav{
   background-color: blue;
   overflow: hidden;
+  margin-bottom: 50px;
 }
 nav ul{
     padding:20;
@@ -14,7 +15,7 @@ nav ul{
     text-align: center;
 }
 nav li{
-margin-left: 10px;
+margin-left: 1px;
 margin-right: 10px;
     display:inline-block;
     *display:inline; /* ie7 fix */
@@ -30,6 +31,10 @@ nav a{
   font-size: 20px;
 line-height: 1.6em;
 }
+nav a:hover{
+  color:#EB1919;
+  text-decoration: none;
+}
 .title{
   vertical-align: middle;
   position:relative;
@@ -42,28 +47,66 @@ h1,h2,h3,h4,h5,h6{
   text-align: center;
 }
 a {
-text-decoration: none;
+   color:#EB1919;
+  text-decoration: none;
+  font-size: 20px;
+  margin:auto;
 font-family: 'Open Sans', sans-serif;
 }
-a:hover{
+ a:hover{
+  color:#E86262;
+  text-decoration: none;
+}
+nav a:hover{
   color:#EB1919;
   text-decoration: none;
 }
-
-.line-seperator{
-  height: 2;
-  background-color: blue;
+p {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 5%;
+    color:black;
+    line-height: 1.5;
+    margin:0;
+}
+.date{
+  color:#15E6EE;
+  text-align: center;
+  margin: none;
+}
+.player {
+  width: 100%;
+  max-width: 900px;
+}
+.musicCredits{
+  font-size: 20px;
+  font-weight: bold;
+    margin-left: 10%;
 }
 .logo{
-  width:75%;
+  width:200px;
+  border-radius: 50%;
+
+} img{
+  border-width: thick;
+  border-color: red;
+display: inline-block;
+}
+article{
+margin:10%;
+}
+aside{
+    display: inline-block;
+     float:right;
+  color:black;
+  width : 25%;
+  position:relative;
+  padding: 33px;
+  padding-right: 40px;
+  overflow: hidden;
+    margin:0;
 }
 
-aside{
-    float:right;
-    position: relative;
-    left:20;
-    right:auto;
-}
 footer{
   *display:inline; /* ie7 fix */
   *zoom:1; /* hasLayout ie7 trigger */
@@ -72,4 +115,19 @@ footer{
     padding:5;
     background-color: blue;
     color:white;
+}
+@media screen and (max-width:700px){
+  img {
+    max-width:100%;
+  margin:0;
+  }
+  aside{
+    display: inline-block;
+  color:black;
+  width : 100%;
+  text-align: center;
+  padding: 33px;
+  margin:0;
+  padding-bottom: 10%;
+  }
 }
