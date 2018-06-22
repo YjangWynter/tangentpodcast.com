@@ -1,11 +1,8 @@
-<Files ~ "^\.(htaccess|htpasswd)$">
-deny from all
-</Files>
-Options Indexes
+<IfModule mod_rewrite.c>
 RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
-RewriteCond %{HTTP_HOST} ^(tangentpodcast\.com)(:80)? [NC]
-RewriteRule ^(.*) http://www.tangentpodcast.com/$1 [R=301,L]
-DirectoryIndex index.html
-order deny,allow
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+</IfModule>
